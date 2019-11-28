@@ -1,0 +1,119 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\formacio\\Documents\\jsanchez\\linkbub-trainingexample1_averagemarks-8dad487fc0aa\\ConsoleApp2_oop_Solution_Completa\\ConsoleApp1\\Academy.App.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\formacio\\Documents\\jsanchez\\linkbub-trainingexample1_averagemarks-8dad487fc0aa\\ConsoleApp2_oop_Solution_Completa\\ConsoleApp1\\Academy.App.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\formacio\\Documents\\jsanchez\\linkbub-trainingexample1_averagemarks-8dad487fc0aa\\ConsoleApp2_oop_Solution_Completa\\ConsoleApp1\\Academy.App.csproj",
+        "projectName": "Academy.App",
+        "projectPath": "C:\\Users\\formacio\\Documents\\jsanchez\\linkbub-trainingexample1_averagemarks-8dad487fc0aa\\ConsoleApp2_oop_Solution_Completa\\ConsoleApp1\\Academy.App.csproj",
+        "packagesPath": "C:\\Users\\formacio\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\formacio\\Documents\\jsanchez\\linkbub-trainingexample1_averagemarks-8dad487fc0aa\\ConsoleApp2_oop_Solution_Completa\\ConsoleApp1\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\formacio\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.0": {
+            "projectReferences": {
+              "C:\\Users\\formacio\\Documents\\jsanchez\\linkbub-trainingexample1_averagemarks-8dad487fc0aa\\ConsoleApp2_oop_Solution_Completa\\StudentsFromHell.Lib\\Academy.Lib.csproj": {
+                "projectPath": "C:\\Users\\formacio\\Documents\\jsanchez\\linkbub-trainingexample1_averagemarks-8dad487fc0aa\\ConsoleApp2_oop_Solution_Completa\\StudentsFromHell.Lib\\Academy.Lib.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.0": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\formacio\\Documents\\jsanchez\\linkbub-trainingexample1_averagemarks-8dad487fc0aa\\ConsoleApp2_oop_Solution_Completa\\StudentsFromHell.Lib\\Academy.Lib.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\formacio\\Documents\\jsanchez\\linkbub-trainingexample1_averagemarks-8dad487fc0aa\\ConsoleApp2_oop_Solution_Completa\\StudentsFromHell.Lib\\Academy.Lib.csproj",
+        "projectName": "Academy.Lib",
+        "projectPath": "C:\\Users\\formacio\\Documents\\jsanchez\\linkbub-trainingexample1_averagemarks-8dad487fc0aa\\ConsoleApp2_oop_Solution_Completa\\StudentsFromHell.Lib\\Academy.Lib.csproj",
+        "packagesPath": "C:\\Users\\formacio\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\formacio\\Documents\\jsanchez\\linkbub-trainingexample1_averagemarks-8dad487fc0aa\\ConsoleApp2_oop_Solution_Completa\\StudentsFromHell.Lib\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\formacio\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
