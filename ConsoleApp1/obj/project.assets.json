@@ -32,11 +32,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\formacio\\Documents\\jsanchez\\linkbub-trainingexample1_averagemarks-8dad487fc0aa\\ConsoleApp2_oop_Solution_Completa\\ConsoleApp1\\Academy.App.csproj",
+      "projectUniqueName": "C:\\Users\\formacio\\Documents\\jsanchez_it\\EJERCICIOS_IT\\solucionCompleta\\ConsoleApp1\\Academy.App.csproj",
       "projectName": "Academy.App",
-      "projectPath": "C:\\Users\\formacio\\Documents\\jsanchez\\linkbub-trainingexample1_averagemarks-8dad487fc0aa\\ConsoleApp2_oop_Solution_Completa\\ConsoleApp1\\Academy.App.csproj",
+      "projectPath": "C:\\Users\\formacio\\Documents\\jsanchez_it\\EJERCICIOS_IT\\solucionCompleta\\ConsoleApp1\\Academy.App.csproj",
       "packagesPath": "C:\\Users\\formacio\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\formacio\\Documents\\jsanchez\\linkbub-trainingexample1_averagemarks-8dad487fc0aa\\ConsoleApp2_oop_Solution_Completa\\ConsoleApp1\\obj\\",
+      "outputPath": "C:\\Users\\formacio\\Documents\\jsanchez_it\\EJERCICIOS_IT\\solucionCompleta\\ConsoleApp1\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\formacio\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -52,8 +52,8 @@
       "frameworks": {
         "netcoreapp3.0": {
           "projectReferences": {
-            "C:\\Users\\formacio\\Documents\\jsanchez\\linkbub-trainingexample1_averagemarks-8dad487fc0aa\\ConsoleApp2_oop_Solution_Completa\\StudentsFromHell.Lib\\Academy.Lib.csproj": {
-              "projectPath": "C:\\Users\\formacio\\Documents\\jsanchez\\linkbub-trainingexample1_averagemarks-8dad487fc0aa\\ConsoleApp2_oop_Solution_Completa\\StudentsFromHell.Lib\\Academy.Lib.csproj"
+            "C:\\Users\\formacio\\Documents\\jsanchez_it\\EJERCICIOS_IT\\solucionCompleta\\StudentsFromHell.Lib\\Academy.Lib.csproj": {
+              "projectPath": "C:\\Users\\formacio\\Documents\\jsanchez_it\\EJERCICIOS_IT\\solucionCompleta\\StudentsFromHell.Lib\\Academy.Lib.csproj"
             }
           }
         }

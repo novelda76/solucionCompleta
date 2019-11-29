@@ -102,7 +102,7 @@ namespace ConsoleApp1
                 else if (option == "a")
                 {
                     Console.WriteLine("Para volver sin guardar alumno escriba  *.");
-                    Console.WriteLine("escriba el dni:");
+                    Console.WriteLine("Escriba el dni:");
 
                     #region read dni
                     var dni = Console.ReadLine();
@@ -123,7 +123,7 @@ namespace ConsoleApp1
                     #endregion
 
                     #region read name
-                    Console.WriteLine("escriba el nombre y apellidos:");
+                    Console.WriteLine("Escriba el nombre y apellidos:");
                     var name = Console.ReadLine();
 
                     if (name == "*")
@@ -166,11 +166,11 @@ namespace ConsoleApp1
                         var sr = student.Save(); 
                         if (sr.IsSuccess)
                         {
-                            Console.WriteLine($"alumno guardado correctamente");
+                            Console.WriteLine($"Alumno guardado correctamente");
                         }
                         else
                         {
-                            Console.WriteLine($"uno o más errores han ocurrido y el almuno no se guardado correctamente: {sr.AllErrors}");
+                            Console.WriteLine($"Uno o más errores han ocurrido y el almuno no se guardado correctamente: {sr.AllErrors}");
                         }
                     }
                 }

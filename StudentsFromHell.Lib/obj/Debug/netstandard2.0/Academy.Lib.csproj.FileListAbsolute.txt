@@ -22,3 +22,11 @@ C:\Users\formacio\Documents\jsanchez\linkbub-trainingexample1_averagemarks-8dad4
 C:\Users\formacio\Documents\jsanchez\linkbub-trainingexample1_averagemarks-8dad487fc0aa\ConsoleApp2_oop_Solution_Completa\StudentsFromHell.Lib\bin\Debug\netstandard2.0\Academy.Lib.pdb
 C:\Users\formacio\Documents\jsanchez\linkbub-trainingexample1_averagemarks-8dad487fc0aa\ConsoleApp2_oop_Solution_Completa\StudentsFromHell.Lib\obj\Debug\netstandard2.0\Academy.Lib.dll
 C:\Users\formacio\Documents\jsanchez\linkbub-trainingexample1_averagemarks-8dad487fc0aa\ConsoleApp2_oop_Solution_Completa\StudentsFromHell.Lib\obj\Debug\netstandard2.0\Academy.Lib.pdb
+C:\Users\formacio\Documents\jsanchez_it\EJERCICIOS_IT\solucionCompleta\StudentsFromHell.Lib\bin\Debug\netstandard2.0\Academy.Lib.deps.json
+C:\Users\formacio\Documents\jsanchez_it\EJERCICIOS_IT\solucionCompleta\StudentsFromHell.Lib\bin\Debug\netstandard2.0\Academy.Lib.dll
+C:\Users\formacio\Documents\jsanchez_it\EJERCICIOS_IT\solucionCompleta\StudentsFromHell.Lib\bin\Debug\netstandard2.0\Academy.Lib.pdb
+C:\Users\formacio\Documents\jsanchez_it\EJERCICIOS_IT\solucionCompleta\StudentsFromHell.Lib\obj\Debug\netstandard2.0\Academy.Lib.csprojAssemblyReference.cache
+C:\Users\formacio\Documents\jsanchez_it\EJERCICIOS_IT\solucionCompleta\StudentsFromHell.Lib\obj\Debug\netstandard2.0\Academy.Lib.AssemblyInfoInputs.cache
+C:\Users\formacio\Documents\jsanchez_it\EJERCICIOS_IT\solucionCompleta\StudentsFromHell.Lib\obj\Debug\netstandard2.0\Academy.Lib.AssemblyInfo.cs
+C:\Users\formacio\Documents\jsanchez_it\EJERCICIOS_IT\solucionCompleta\StudentsFromHell.Lib\obj\Debug\netstandard2.0\Academy.Lib.dll
+C:\Users\formacio\Documents\jsanchez_it\EJERCICIOS_IT\solucionCompleta\StudentsFromHell.Lib\obj\Debug\netstandard2.0\Academy.Lib.pdb

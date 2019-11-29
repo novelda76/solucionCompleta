@@ -40,3 +40,17 @@ C:\Users\formacio\Documents\jsanchez\linkbub-trainingexample1_averagemarks-8dad4
 C:\Users\formacio\Documents\jsanchez\linkbub-trainingexample1_averagemarks-8dad487fc0aa\ConsoleApp2_oop_Solution_Completa\ConsoleApp1\obj\Debug\netcoreapp3.0\Academy.App.csproj.CopyComplete
 C:\Users\formacio\Documents\jsanchez\linkbub-trainingexample1_averagemarks-8dad487fc0aa\ConsoleApp2_oop_Solution_Completa\ConsoleApp1\obj\Debug\netcoreapp3.0\Academy.App.dll
 C:\Users\formacio\Documents\jsanchez\linkbub-trainingexample1_averagemarks-8dad487fc0aa\ConsoleApp2_oop_Solution_Completa\ConsoleApp1\obj\Debug\netcoreapp3.0\Academy.App.pdb
+C:\Users\formacio\Documents\jsanchez_it\EJERCICIOS_IT\solucionCompleta\ConsoleApp1\bin\Debug\netcoreapp3.0\Academy.App.exe
+C:\Users\formacio\Documents\jsanchez_it\EJERCICIOS_IT\solucionCompleta\ConsoleApp1\bin\Debug\netcoreapp3.0\Academy.App.deps.json
+C:\Users\formacio\Documents\jsanchez_it\EJERCICIOS_IT\solucionCompleta\ConsoleApp1\bin\Debug\netcoreapp3.0\Academy.App.runtimeconfig.json
+C:\Users\formacio\Documents\jsanchez_it\EJERCICIOS_IT\solucionCompleta\ConsoleApp1\bin\Debug\netcoreapp3.0\Academy.App.runtimeconfig.dev.json
+C:\Users\formacio\Documents\jsanchez_it\EJERCICIOS_IT\solucionCompleta\ConsoleApp1\bin\Debug\netcoreapp3.0\Academy.App.dll
+C:\Users\formacio\Documents\jsanchez_it\EJERCICIOS_IT\solucionCompleta\ConsoleApp1\bin\Debug\netcoreapp3.0\Academy.App.pdb
+C:\Users\formacio\Documents\jsanchez_it\EJERCICIOS_IT\solucionCompleta\ConsoleApp1\bin\Debug\netcoreapp3.0\Academy.Lib.dll
+C:\Users\formacio\Documents\jsanchez_it\EJERCICIOS_IT\solucionCompleta\ConsoleApp1\bin\Debug\netcoreapp3.0\Academy.Lib.pdb
+C:\Users\formacio\Documents\jsanchez_it\EJERCICIOS_IT\solucionCompleta\ConsoleApp1\obj\Debug\netcoreapp3.0\Academy.App.csprojAssemblyReference.cache
+C:\Users\formacio\Documents\jsanchez_it\EJERCICIOS_IT\solucionCompleta\ConsoleApp1\obj\Debug\netcoreapp3.0\Academy.App.AssemblyInfoInputs.cache
+C:\Users\formacio\Documents\jsanchez_it\EJERCICIOS_IT\solucionCompleta\ConsoleApp1\obj\Debug\netcoreapp3.0\Academy.App.AssemblyInfo.cs
+C:\Users\formacio\Documents\jsanchez_it\EJERCICIOS_IT\solucionCompleta\ConsoleApp1\obj\Debug\netcoreapp3.0\Academy.App.csproj.CopyComplete
+C:\Users\formacio\Documents\jsanchez_it\EJERCICIOS_IT\solucionCompleta\ConsoleApp1\obj\Debug\netcoreapp3.0\Academy.App.dll
+C:\Users\formacio\Documents\jsanchez_it\EJERCICIOS_IT\solucionCompleta\ConsoleApp1\obj\Debug\netcoreapp3.0\Academy.App.pdb

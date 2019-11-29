@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\formacio\\Documents\\jsanchez\\linkbub-trainingexample1_averagemarks-8dad487fc0aa\\ConsoleApp2_oop_Solution_Completa\\StudentsFromHell.Lib\\Academy.Lib.csproj": {}
+    "C:\\Users\\formacio\\Documents\\jsanchez_it\\EJERCICIOS_IT\\solucionCompleta\\StudentsFromHell.Lib\\Academy.Lib.csproj": {}
   },
   "projects": {
-    "C:\\Users\\formacio\\Documents\\jsanchez\\linkbub-trainingexample1_averagemarks-8dad487fc0aa\\ConsoleApp2_oop_Solution_Completa\\StudentsFromHell.Lib\\Academy.Lib.csproj": {
+    "C:\\Users\\formacio\\Documents\\jsanchez_it\\EJERCICIOS_IT\\solucionCompleta\\StudentsFromHell.Lib\\Academy.Lib.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\formacio\\Documents\\jsanchez\\linkbub-trainingexample1_averagemarks-8dad487fc0aa\\ConsoleApp2_oop_Solution_Completa\\StudentsFromHell.Lib\\Academy.Lib.csproj",
+        "projectUniqueName": "C:\\Users\\formacio\\Documents\\jsanchez_it\\EJERCICIOS_IT\\solucionCompleta\\StudentsFromHell.Lib\\Academy.Lib.csproj",
         "projectName": "Academy.Lib",
-        "projectPath": "C:\\Users\\formacio\\Documents\\jsanchez\\linkbub-trainingexample1_averagemarks-8dad487fc0aa\\ConsoleApp2_oop_Solution_Completa\\StudentsFromHell.Lib\\Academy.Lib.csproj",
+        "projectPath": "C:\\Users\\formacio\\Documents\\jsanchez_it\\EJERCICIOS_IT\\solucionCompleta\\StudentsFromHell.Lib\\Academy.Lib.csproj",
         "packagesPath": "C:\\Users\\formacio\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\formacio\\Documents\\jsanchez\\linkbub-trainingexample1_averagemarks-8dad487fc0aa\\ConsoleApp2_oop_Solution_Completa\\StudentsFromHell.Lib\\obj\\",
+        "outputPath": "C:\\Users\\formacio\\Documents\\jsanchez_it\\EJERCICIOS_IT\\solucionCompleta\\StudentsFromHell.Lib\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\formacio\\AppData\\Roaming\\NuGet\\NuGet.Config",

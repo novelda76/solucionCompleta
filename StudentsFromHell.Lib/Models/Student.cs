@@ -20,7 +20,7 @@ namespace Academy.Lib.Models
             if (string.IsNullOrEmpty(dni))
             {
                 output.IsSuccess = false;
-                output.Errors.Add("El dni delalumno no puede estar vacío");
+                output.Errors.Add("El dni del alumno no puede estar vacío");
             }
 
             #region check duplication
@@ -36,13 +36,13 @@ namespace Academy.Lib.Models
             {
                 // on create
                 output.IsSuccess = false;
-                output.Errors.Add("ya existe un alumno con ese dni");
+                output.Errors.Add("Ya existe un alumno con ese dni");
             }
             else if (currentId != default && entityWithDni.Id != currentId)
             {
                 // on update
                 output.IsSuccess = false;
-                output.Errors.Add("ya existe un alumno con ese dni");
+                output.Errors.Add("Ya existe un alumno con ese dni");
             }
             #endregion
 
@@ -63,7 +63,7 @@ namespace Academy.Lib.Models
             if (string.IsNullOrEmpty(chairNumberText))
             {
                 output.IsSuccess = false;
-                output.Errors.Add("el número de la silla no puede estar vacío o nulo");
+                output.Errors.Add("El número de la silla no puede estar vacío o nulo");
             }
             #endregion
 
@@ -74,7 +74,7 @@ namespace Academy.Lib.Models
             if (!isConversionOk)
             {
                 output.IsSuccess = false;
-                output.Errors.Add($"no se puede convertir {chairNumber} en número");
+                output.Errors.Add($"No se puede convertir {chairNumber} en número");
             }
 
             #endregion
@@ -89,7 +89,7 @@ namespace Academy.Lib.Models
                 if (currentStudentInChair != null)
                 {
                     output.IsSuccess = false;
-                    output.Errors.Add($"ya hay un alumno {currentStudentInChair.Name} en la silla {chairNumber}");
+                    output.Errors.Add($"Ya hay un alumno {currentStudentInChair.Name} en la silla {chairNumber}");
                 }
             }
             #endregion
@@ -110,7 +110,7 @@ namespace Academy.Lib.Models
             if (string.IsNullOrEmpty(name))
             {
                 output.IsSuccess = false;
-                output.Errors.Add("el nombre delalumno no puede estar vacío");
+                output.Errors.Add("El nombre del alumno no puede estar vacío");
             }
 
             return output;
@@ -126,8 +126,7 @@ namespace Academy.Lib.Models
         public List<Exam> Exams
         {
             get
-            {
-                //return DbContext.Exams.Values.Where(e => e.student.Id == this.Id).ToList();
+            {                
 
                 var repoExams = new Repository<Exam>();
 
