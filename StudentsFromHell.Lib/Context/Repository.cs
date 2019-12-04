@@ -23,6 +23,7 @@ namespace Academy.Lib.Context
         public virtual SaveResult<T> Add(T entity)
         {
             var output = new SaveResult<T>();
+            output.IsSuccess = true;
 
             if (entity.Id == default(Guid))
                 entity.Id = Guid.NewGuid();
@@ -44,6 +45,8 @@ namespace Academy.Lib.Context
         public virtual SaveResult<T> Update(T entity)
         {
             var output = new SaveResult<T>();
+            output.IsSuccess = true;
+
 
             if (entity.Id == default(Guid))
             {

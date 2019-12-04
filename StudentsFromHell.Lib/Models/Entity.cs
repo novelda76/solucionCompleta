@@ -44,5 +44,16 @@ namespace Academy.Lib.Models
 
             return output;
         }
+
+        public virtual T Clone<T>() where T : Entity, new()
+        {
+            var output = new T
+            {
+                Id = this.Id
+
+            };
+            return output;
+
+        }
     }
 }

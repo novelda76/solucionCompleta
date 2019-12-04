@@ -6,7 +6,7 @@ namespace Academy.Lib.Context
 {
     public class StudentRepository : Repository<Student>
     {
-        private static Dictionary<string, Student> StudentsByDni { get; set; } = new Dictionary<string, Student>();
+        public static Dictionary<string, Student> StudentsByDni { get; set; } = new Dictionary<string, Student>();
 
         public override SaveResult<Student> Add(Student entity)
         {

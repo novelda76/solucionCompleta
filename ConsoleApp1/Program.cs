@@ -85,7 +85,7 @@ namespace ConsoleApp1
             CurrentOption = "a";
             Console.WriteLine("Menu de gestionar alumnos.");
             Console.WriteLine("Opciones: a - para añadir un nuevo almuno");
-            Console.WriteLine("Opciones: e + dni - para editar un alumno existente");
+            Console.WriteLine("Opciones: e - para editar un alumno existente");
             Console.WriteLine("Opciones: n - ver información del alumno");
             Console.WriteLine("Opciones: n/e - ver exámenes de alumno");
             Console.WriteLine("Opciones: n/e - ver asignaturas de alumno");
@@ -173,6 +173,127 @@ namespace ConsoleApp1
                             Console.WriteLine($"Uno o más errores han ocurrido y el almuno no se guardado correctamente: {sr.AllErrors}");
                         }
                     }
+                }
+
+                else if (option == "e")
+                {
+
+                    #region dni
+                    Console.WriteLine("Para volver sin guardar escriba *.");
+                    Console.WriteLine("Escriba el dni del alumno que desea editar:");
+                    var dni = Console.ReadLine();
+
+                    if (dni == "*")
+                        break;
+
+                    //StudentRepository.StudentsByDni.ContainsKey(dni)
+
+                    var repo = new Repository<Student>();
+                    var entityWithDni = repo.QueryAll().FirstOrDefault(x => x.Dni == dni);
+
+
+                    if (entityWithDni==null)
+                    {
+                        Console.WriteLine("El dni introducido no está en la base de datos");
+                        Console.WriteLine("Escriba el dni del alumno que desea editar:");
+                        dni = Console.ReadLine();
+                    }
+
+                    if (!(entityWithDni==null))
+                    {
+                        var existingStudent = entityWithDni.Clone(); 
+
+                        Console.WriteLine("Escribe el nuevo dni");
+                        Console.WriteLine("Pulse * si no desea editar el dni");
+                        var dniNuevo = Console.ReadLine();
+
+                        if (dniNuevo == "*")
+                            break;
+
+                        
+
+                        ValidationResult<string> vrDni;
+                        while (!(vrDni = Student.ValidateDni(dniNuevo)).IsSuccess)
+                        {
+                            Console.WriteLine(vrDni.AllErrors);
+                            dniNuevo = Console.ReadLine();
+                            vrDni = Student.ValidateDni(dniNuevo, existingStudent.Id);
+                        }
+
+                        if (dniNuevo == "*")
+                            break;
+                      
+
+                        #endregion
+
+                        #region read name
+                        Console.WriteLine("Escriba el nombre y apellidos:");
+                        Console.WriteLine("Pulse * si no desea editar el nombre y apellidos");
+                        var nameNuevo = Console.ReadLine();
+
+                        if (nameNuevo == "*")
+                            break;
+
+              
+
+                        ValidationResult<string> vrName;
+                        while (!(vrName = Student.ValidateName(nameNuevo)).IsSuccess)
+                        {
+                            Console.WriteLine(vrName.AllErrors);
+                            nameNuevo = Console.ReadLine();
+                        }
+
+                        #endregion
+
+                        #region read chair number
+                        Console.WriteLine("escriba el número de silla:");
+                        var chairNumberTextNuevo = Console.ReadLine(); 
+                        
+
+                        if (chairNumberTextNuevo == "*")
+                            break;
+                      
+
+                        ValidationResult<int> vrChair;
+
+
+                        while (!(vrChair = Student.ValidateChairNumber(chairNumberTextNuevo)).IsSuccess)
+                        {
+                            Console.WriteLine(vrChair.AllErrors);
+                            chairNumberTextNuevo = Console.ReadLine();
+                        }
+
+
+
+                        #endregion
+
+
+                        if (vrDni.IsSuccess && vrName.IsSuccess && vrChair.IsSuccess)
+                        {
+
+                            existingStudent.Dni = vrDni.ValidatedResult;
+                            existingStudent.Name = vrName.ValidatedResult;
+                            existingStudent.ChairNumber = vrChair.ValidatedResult;
+
+
+                            
+                            var save = existingStudent.Save();
+                            
+
+                            if (save.IsSuccess)
+                            {
+                                Console.WriteLine($"Alumno guardado correctamente");
+                            }
+                            else
+                            {
+                                Console.WriteLine($"Uno o más errores han ocurrido y el alumno no se guardado correctamente");
+                            }
+
+
+                        }
+
+                    }
+
                 }
             }
 

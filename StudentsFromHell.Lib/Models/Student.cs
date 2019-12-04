@@ -32,24 +32,31 @@ namespace Academy.Lib.Models
             var repo = new Repository<Student>();
             var entityWithDni = repo.QueryAll().FirstOrDefault(x => x.Dni == dni);
 
-            if (currentId == default && entityWithDni != null)
-            {
-                // on create
-                output.IsSuccess = false;
-                output.Errors.Add("Ya existe un alumno con ese dni");
-            }
-            else if (currentId != default && entityWithDni.Id != currentId)
-            {
-                // on update
-                output.IsSuccess = false;
-                output.Errors.Add("Ya existe un alumno con ese dni");
+            if(entityWithDni!=null)
+            {            
+
+                if (currentId == default && entityWithDni != null)
+                {
+                    // on create
+                    output.IsSuccess = false;
+                    output.Errors.Add("Ya existe un alumno con ese dni");
+                }
+                else if (currentId != default && entityWithDni.Id != currentId)
+                {
+                    // on update
+                    output.IsSuccess = false;
+                    output.Errors.Add("Ya existe un alumno con ese dni");
+                }
             }
             #endregion
+
+            if (output.IsSuccess)
+                output.ValidatedResult = dni;
 
             return output;
         }
 
-        public static ValidationResult<int> ValidateChairNumber(string chairNumberText)
+        public static ValidationResult<int> ValidateChairNumber(string chairNumberText, Guid currentId= default)
         {
             var output = new ValidationResult<int>()
             {
@@ -58,6 +65,7 @@ namespace Academy.Lib.Models
 
             var chairNumber = 0;
             var isConversionOk = false;
+            
 
             #region check null or empty
             if (string.IsNullOrEmpty(chairNumberText))
@@ -79,18 +87,28 @@ namespace Academy.Lib.Models
 
             #endregion
 
-            #region check if the char is already in use
+            #region check if the chair is already in use
 
-            if (isConversionOk)
-            {
+            
                 var repoStudents = new Repository<Student>();
                 var currentStudentInChair = repoStudents.QueryAll().FirstOrDefault(s => s.ChairNumber == chairNumber);
 
-                if (currentStudentInChair != null)
+            if (currentStudentInChair != null && isConversionOk)
+            {
+                if (currentStudentInChair != null && currentId == default)
                 {
                     output.IsSuccess = false;
                     output.Errors.Add($"Ya hay un alumno {currentStudentInChair.Name} en la silla {chairNumber}");
                 }
+
+                else if (currentId != default && currentStudentInChair.Id != currentId)
+                {
+                    output.IsSuccess = false;
+                    output.Errors.Add("ya existe un alumno con ese dni");
+                    
+
+                }
+
             }
             #endregion
 
@@ -113,10 +131,29 @@ namespace Academy.Lib.Models
                 output.Errors.Add("El nombre del alumno no puede estar vacío");
             }
 
+            if (output.IsSuccess)
+                output.ValidatedResult = name;
+
             return output;
         }
 
         #endregion
+
+        public override T Clone<T>()
+        {
+            var output = base.Clone<T>() as Student;
+
+            output.Dni = this.Dni;
+            output.Name = this.Name;
+            output.ChairNumber = this.ChairNumber;
+
+            return output as T;
+        }
+
+        public Student Clone()
+        {          
+            return Clone<Student>();
+        }
 
         public string Dni { get; set; }
         public string Name { get; set; }
@@ -127,7 +164,6 @@ namespace Academy.Lib.Models
         {
             get
             {                
-
                 var repoExams = new Repository<Exam>();
 
                 return repoExams.QueryAll().Where(e => e.student.Id == this.Id).ToList();
@@ -161,7 +197,7 @@ namespace Academy.Lib.Models
 
         public void ValidateChairNumber(ValidationResult validationResult)
         {
-            var vr = ValidateChairNumber(this.ChairNumber.ToString());
+            ValidationResult<int> vr = ValidateChairNumber(this.ChairNumber.ToString());
 
             if (!vr.IsSuccess)
             {
